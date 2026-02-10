@@ -3,84 +3,210 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<main class="mx-auto flex min-h-screen w-full max-w-4xl flex-col gap-16 px-6 py-16 sm:py-20">
-		<section class="flex flex-col gap-6">
-			<div class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-slate-500">
-				<span class="h-1.5 w-1.5 rounded-full bg-[#1175BA]"></span>
-				English speaking club
-			</div>
-			<div class="flex flex-col gap-4">
-				<h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-					Flowlish
-				</h1>
-				<p class="text-lg font-medium text-slate-700">
-					Education as a process, not a product.
-				</p>
-				<p class="max-w-2xl text-base text-slate-600">
-					Speaking practice, pilot courses and education experiments for IT,
-					students and creatives.
-				</p>
-			</div>
-			<div>
-				<a
-					href="#contact"
-					class="inline-flex items-center rounded-full border border-[#1175BA] px-5 py-2 text-sm font-medium text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+	<main class="min-h-screen bg-slate-50">
+		<div
+			class="mx-auto flex w-full max-w-5xl flex-col gap-20 px-6 py-12 sm:py-16"
+		>
+			<header
+				class="sticky top-4 z-10 flex items-center justify-between rounded-2xl border border-slate-200 bg-white/90 px-5 py-4 shadow-sm backdrop-blur"
+			>
+				<div class="flex items-center gap-3">
+					<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"></span>
+					<span
+						class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700"
+					>
+						Flowlish
+					</span>
+				</div>
+				<nav
+					class="flex items-center gap-4 text-xs font-semibold uppercase tracking-[0.18em] text-slate-700"
 				>
-					Contact
-				</a>
-			</div>
-		</section>
+					<a
+						href="#operations"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Operations</a
+					>
+					<a
+						href="#results"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Results</a
+					>
+					<a
+						href="#contact"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Contact</a
+					>
+				</nav>
+			</header>
+			<section class="flex flex-col gap-6">
+				<div
+					class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-slate-500"
+				>
+					<span class="h-1.5 w-1.5 rounded-full bg-[#1175BA]"></span>
+					English speaking club
+				</div>
+				<div class="flex flex-col gap-2">
+					<h1
+						class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl"
+					>
+						Flowlish
+					</h1>
+					<p class="text-lg font-medium text-slate-700">
+						Education as a process, not a product.
+					</p>
+					<p class="max-w-2xl text-base text-slate-600">
+						Speaking practice, pilot courses and education
+						experiments for IT, students and creatives.
+					</p>
+				</div>
+				<div>
+					<a
+						href="#contact"
+						class="inline-flex items-center rounded-full border border-[#1175BA] px-5 py-2 text-sm font-medium text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+					>
+						Contact
+					</a>
+				</div>
+			</section>
 
-		<section class="flex flex-col gap-6">
-			<h2 class="text-xl font-semibold text-slate-900">Current state of operations</h2>
-			<ul class="grid gap-3 text-base text-slate-700 sm:grid-cols-2">
-				<li class="rounded-2xl border border-slate-200 bg-white px-4 py-3">Pilot classes</li>
-				<li class="rounded-2xl border border-slate-200 bg-white px-4 py-3">Speaking-practices</li>
-				<li class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-					Educational experiments
-				</li>
-			</ul>
-		</section>
+			<section id="operations" class="flex flex-col gap-4">
+				<h2 class="text-xl font-semibold text-slate-900">
+					Current state of operations
+				</h2>
+				<p class="max-w-2xl text-base text-slate-600">
+					This project grows slowly, intentionally.
+				</p>
+				<ul class="grid gap-4 text-base text-slate-700 sm:grid-cols-2">
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Pilot classes
+					</li>
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Speaking-practices
+					</li>
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Educational experiments
+					</li>
+				</ul>
+			</section>
 
-		<section class="rounded-3xl border border-slate-200 bg-white px-6 py-8">
-			<div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-				<h2 class="text-xl font-semibold text-slate-900">Beginner level results</h2>
-				<span class="text-3xl font-semibold text-[#1175BA]">30</span>
-			</div>
-			<p class="mt-3 text-base text-slate-600">
-				30 certificates already issued to beginner level students.
-			</p>
-		</section>
+			<section
+				id="results"
+				class="rounded-3xl border border-slate-200 bg-white px-7 py-10 shadow-sm"
+			>
+				<div
+					class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+				>
+					<h2 class="text-xl font-semibold text-slate-900">
+						Beginner level results
+					</h2>
+					<span class="text-3xl font-semibold text-[#1175BA]">30</span
+					>
+				</div>
+				<p class="mt-3 text-base text-slate-600">
+					30 people have already passed beginner-level practice
+				</p>
+			</section>
 
-		<section class="flex flex-col gap-6">
-			<h2 class="text-xl font-semibold text-slate-900">How we work</h2>
-			<div class="grid gap-3 text-base text-slate-700 sm:grid-cols-3">
-				<div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">Small groups</div>
-				<div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">Experiments</div>
-				<div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">Fixed deadlines</div>
-			</div>
-		</section>
+			<section class="flex flex-col gap-4">
+				<h2 class="text-xl font-semibold text-slate-900">
+					How we work
+				</h2>
+				<p class="max-w-2xl text-base text-slate-600">
+					Flowlish is built as an ongoing experiment by people who
+					value depth over speed.
+				</p>
+				<div class="grid gap-4 text-base text-slate-700 sm:grid-cols-3">
+					<div
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Small groups
+					</div>
+					<div
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Experiments
+					</div>
+					<div
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Fixed deadlines
+					</div>
+				</div>
+			</section>
 
-		<section class="flex flex-col gap-6">
-			<h2 class="text-xl font-semibold text-slate-900">Who might be interested</h2>
-			<ul class="grid gap-3 text-base text-slate-700 sm:grid-cols-2">
-				<li class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-					Beginner teachers and tutors
-				</li>
-				<li class="rounded-2xl border border-slate-200 bg-white px-4 py-3">Schools</li>
-				<li class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-					People valuing the social aspect of education
-				</li>
-			</ul>
-		</section>
+			<section class="flex flex-col gap-6">
+				<h2 class="text-xl font-semibold text-slate-900">
+					Who might be interested
+				</h2>
+				<ul class="grid gap-4 text-base text-slate-700 sm:grid-cols-2">
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Beginner teachers and tutors
+					</li>
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Schools
+					</li>
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						People valuing the social aspect of education
+					</li>
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						People tired of "fast results" and "hacks"
+					</li>
+					<li
+						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
+					>
+						Those who value dialogue over lectures
+					</li>
+				</ul>
+			</section>
 
-		<section id="contact" class="flex flex-col gap-4">
-			<h2 class="text-xl font-semibold text-slate-900">Contact</h2>
-			<div class="flex flex-wrap gap-3 text-sm text-slate-700">
-				<span class="rounded-full border border-slate-200 bg-white px-4 py-2">Telegram</span>
-				<span class="rounded-full border border-slate-200 bg-white px-4 py-2">WhatsApp</span>
-				<span class="rounded-full border border-slate-200 bg-white px-4 py-2">Instagram</span>
-			</div>
-		</section>
+			<section id="contact" class="mt-2">
+				<footer
+					class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm"
+				>
+					<div class="flex items-center gap-3">
+						<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"></span>
+						<h2
+							class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700"
+						>
+							Contact
+						</h2>
+					</div>
+					<p class="max-w-2xl text-base text-slate-600">
+						Contact us if you are curious
+					</p>
+					<div class="flex flex-wrap gap-3 text-sm text-slate-700">
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Telegram</a
+						>
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>WhatsApp</a
+						>
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Instagram</a
+						>
+					</div>
+				</footer>
+			</section>
+		</div>
 	</main>
 </Layout>
