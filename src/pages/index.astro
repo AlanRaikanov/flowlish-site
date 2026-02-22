@@ -3,12 +3,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<main class="min-h-screen bg-pink-50/50">
-		<div
-			class="mx-auto flex w-full max-w-5xl flex-col gap-20 px-6 py-12 sm:py-16"
-		>
+	<main class="min-h-screen bg-pink-50/20">
+		<div class="sticky top-4 z-30 px-6 pt-2 sm:pt-2">
 			<header
-				class="sticky top-4 z-10 flex items-center justify-between rounded-2xl border border-slate-200 bg-white/90 px-5 py-4 shadow-sm backdrop-blur"
+				class="mx-auto flex w-full max-w-5xl items-center justify-between rounded-2xl border border-slate-200 bg-white/90 px-5 py-4 shadow-sm backdrop-blur"
 			>
 				<div class="flex items-center gap-3">
 					<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"></span>
@@ -38,7 +36,10 @@ import Layout from "../layouts/Layout.astro";
 					>
 				</nav>
 			</header>
-			<section class="flex flex-col gap-6">
+		</div>
+
+		<section class="bg-pink-50/20 py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-6 px-6">
 				<div
 					class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-slate-500"
 				>
@@ -67,53 +68,76 @@ import Layout from "../layouts/Layout.astro";
 						Contact
 					</a>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="operations" class="flex flex-col gap-4">
+		<section id="operations" class="bg-white py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-4 px-6">
 				<h2 class="text-xl font-semibold text-slate-900">
 					Current state of operations
 				</h2>
 				<p class="max-w-2xl text-base text-slate-600">
 					This project grows slowly, intentionally.
 				</p>
-				<ul class="grid gap-4 text-base text-slate-700 sm:grid-cols-2">
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Pilot classes
+				<ul class="mt-6 flex flex-col gap-10">
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Pilot classes
+						</span>
 					</li>
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Speaking-practices
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Speaking-practices
+						</span>
 					</li>
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Educational experiments
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Educational experiments
+						</span>
 					</li>
 				</ul>
-			</section>
+			</div>
+		</section>
 
-			<section
-				id="results"
-				class="rounded-3xl border border-slate-200 bg-white px-7 py-10 shadow-sm"
-			>
+		<section id="results" class="bg-pink-50/20 py-16">
+			<div class="mx-auto w-full max-w-5xl px-6">
 				<div
-					class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+					class="rounded-3xl border border-slate-200 bg-white px-7 py-10 shadow-sm"
 				>
-					<h2 class="text-xl font-semibold text-slate-900">
-						Beginner level results
-					</h2>
-					<span class="text-3xl font-semibold text-[#1175BA]">30</span
+					<div
+						class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
 					>
+						<h2 class="text-xl font-semibold text-slate-900">
+							Beginner level results
+						</h2>
+						<span class="text-3xl font-semibold text-[#1175BA]"
+							>30</span
+						>
+					</div>
+					<p class="mt-3 text-base text-slate-600">
+						30 people have already passed beginner-level practice
+					</p>
 				</div>
-				<p class="mt-3 text-base text-slate-600">
-					30 people have already passed beginner-level practice
-				</p>
-			</section>
+			</div>
+		</section>
 
-			<section class="flex flex-col gap-4">
+		<section class="bg-white py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-4 px-6">
 				<h2 class="text-xl font-semibold text-slate-900">
 					How we work
 				</h2>
@@ -121,59 +145,171 @@ import Layout from "../layouts/Layout.astro";
 					Flowlish is built as an ongoing experiment by people who
 					value depth over speed.
 				</p>
-				<div class="grid gap-4 text-base text-slate-700 sm:grid-cols-3">
-					<div
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Small groups
-					</div>
-					<div
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Experiments
-					</div>
-					<div
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Fixed deadlines
-					</div>
-				</div>
-			</section>
+				<ul class="mt-6 flex flex-col gap-10">
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Small groups
+						</span>
+					</li>
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Experiments
+						</span>
+					</li>
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Fixed deadlines
+						</span>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-			<section class="flex flex-col gap-6">
+		<section class="bg-white py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-6 px-6">
 				<h2 class="text-xl font-semibold text-slate-900">
 					Who might be interested
 				</h2>
 				<ul class="grid gap-4 text-base text-slate-700 sm:grid-cols-2">
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Beginner teachers and tutors
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-slate-200 bg-pink-50/10 px-6 py-5 transition-colors"
+						>
+							<summary
+								class="cursor-pointer list-none font-semibold text-slate-900"
+							>
+								Beginner teachers and tutors
+							</summary>
+							<p class="mt-3 text-slate-600">
+								If you are starting your teaching practice, this
+								format gives you a safe space to test ideas,
+								receive feedback, and improve communication with
+								real learners.
+							</p>
+						</details>
 					</li>
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Schools
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-slate-200 bg-pink-50/10 px-6 py-5 transition-colors"
+						>
+							<summary
+								class="cursor-pointer list-none font-semibold text-slate-900"
+							>
+								Schools
+							</summary>
+							<p class="mt-3 text-slate-600">
+								Schools that want practical speaking-focused
+								activities can use these sessions as an
+								additional layer for student confidence and
+								active participation.
+							</p>
+						</details>
 					</li>
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						People valuing the social aspect of education
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-slate-200 bg-pink-50/10 px-6 py-5 transition-colors"
+						>
+							<summary
+								class="cursor-pointer list-none font-semibold text-slate-900"
+							>
+								People valuing the social aspect of education
+							</summary>
+							<p class="mt-3 text-slate-600">
+								Learning here is built around dialogue and group
+								exchange, so people who grow through interaction
+								will find the format motivating and sustainable.
+							</p>
+						</details>
 					</li>
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						People tired of "fast results" and "hacks"
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-slate-200 bg-pink-50/10 px-6 py-5 transition-colors"
+						>
+							<summary
+								class="cursor-pointer list-none font-semibold text-slate-900"
+							>
+								People tired of "fast results" and "hacks"
+							</summary>
+							<p class="mt-3 text-slate-600">
+								This approach is slower and more intentional. It
+								focuses on long-term fluency habits instead of
+								shortcuts that disappear after a few weeks.
+							</p>
+						</details>
 					</li>
-					<li
-						class="rounded-2xl border border-slate-200 bg-white px-6 py-5"
-					>
-						Those who value dialogue over lectures
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-slate-200 bg-pink-50/10 px-6 py-5 transition-colors"
+						>
+							<summary
+								class="cursor-pointer list-none font-semibold text-slate-900"
+							>
+								Those who value dialogue over lectures
+							</summary>
+							<p class="mt-3 text-slate-600">
+								Every meeting prioritizes conversation and
+								reflection, making it a strong fit for people
+								who learn best through active exchange.
+							</p>
+						</details>
 					</li>
 				</ul>
-			</section>
+			</div>
+		</section>
 
-			<section id="contact" class="mt-2">
+		<section id="parents" class="bg-white py-16">
+			<div class="mx-auto w-full max-w-5xl px-6">
+				<div
+					class="rounded-2xl border border-slate-200 bg-pink-50/20 px-6 py-7"
+				>
+					<h2 class="text-xl font-semibold text-slate-900">
+						For parents
+					</h2>
+					<p class="mt-3 max-w-3xl text-base text-slate-600">
+						If you want to ask about format, schedule, group size,
+						or your child&apos;s starting level, reach out directly
+						and we will help you choose the right path.
+					</p>
+					<div
+						class="mt-5 flex flex-wrap gap-3 text-sm text-slate-700"
+					>
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Telegram for parents</a
+						>
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>WhatsApp for parents</a
+						>
+						<a
+							href="mailto:hello@flowlish.com"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Email: hello@flowlish.com</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="bg-pink-50/20 py-16">
+			<div class="mx-auto w-full max-w-5xl px-6">
 				<footer
 					class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm"
 				>
@@ -207,7 +343,14 @@ import Layout from "../layouts/Layout.astro";
 						>
 					</div>
 				</footer>
-			</section>
-		</div>
+			</div>
+		</section>
 	</main>
 </Layout>
+
+<style>
+	.interest-card:hover,
+	.interest-card[open] {
+		border-color: #1175ba;
+	}
+</style>
