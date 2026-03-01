@@ -1,0 +1,493 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+	<main class="min-h-screen bg-pink-50/20">
+		<div class="sticky top-4 z-30 px-6 pt-2 sm:pt-2">
+			<header
+				class="mx-auto w-full max-w-5xl rounded-2xl border border-slate-200 bg-slate-50/90 px-5 py-4 shadow-sm backdrop-blur"
+			>
+				<div class="flex items-center justify-between gap-4">
+					<div class="flex items-center gap-3">
+						<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"
+						></span>
+						<span
+							class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700"
+						>
+							Flowlish
+						</span>
+					</div>
+					<button
+						id="mobile-menu-button"
+						type="button"
+						class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-[#1175BA] min-[901px]:hidden"
+						aria-expanded="false"
+						aria-controls="mobile-menu"
+						aria-label="Toggle navigation menu"
+					>
+						<svg
+							class="h-5 w-5"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+						>
+							<line x1="4" y1="7" x2="20" y2="7"></line>
+							<line x1="4" y1="12" x2="20" y2="12"></line>
+							<line x1="4" y1="17" x2="20" y2="17"></line>
+						</svg>
+					</button>
+					<nav
+						class="hidden items-center gap-4 text-xs font-semibold uppercase tracking-[0.18em] text-slate-700 min-[901px]:flex"
+					>
+						<a
+							href="#operations"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>Operations</a
+						>
+						<a
+							href="#results"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>Results</a
+						>
+						<a
+							href="#parents"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>Parents</a
+						>
+						<a
+							href="#contact"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>Contact</a
+						>
+						<span class="h-4 w-px bg-slate-300"></span>
+						<a
+							href="/en"
+							class="text-slate-900"
+							aria-current="page"
+							>EN</a
+						>
+						<a
+							href="/ru"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>RU</a
+						>
+						<a
+							href="/kz"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>KZ</a
+						>
+					</nav>
+				</div>
+				<nav
+					id="mobile-menu"
+					class="hidden flex flex-col gap-3 pt-4 text-xs font-semibold uppercase tracking-[0.18em] text-slate-700 min-[901px]:hidden"
+				>
+					<a
+						href="#operations"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Operations</a
+					>
+					<a
+						href="#results"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Results</a
+					>
+					<a
+						href="#parents"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Parents</a
+					>
+					<a
+						href="#contact"
+						class="text-[#1175BA] transition hover:text-sky-600"
+						>Contact</a
+					>
+					<div class="mt-1 flex flex-col gap-2 border-t border-slate-200 pt-3">
+						<a href="/en" class="text-slate-900" aria-current="page">EN</a>
+						<a
+							href="/ru"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>RU</a
+						>
+						<a
+							href="/kz"
+							class="text-[#1175BA] transition hover:text-sky-600"
+							>KZ</a
+						>
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<section class="bg-pink-50/20 py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-6 px-6">
+				<div
+					class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-slate-500"
+				>
+					<span class="h-1.5 w-1.5 rounded-full bg-[#1175BA]"></span>
+					English speaking club
+				</div>
+				<div class="flex flex-col gap-2">
+					<h1
+						class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl"
+					>
+						Flowlish
+					</h1>
+					<p class="text-lg font-medium text-slate-700">
+						Education as a process, not a product.
+					</p>
+					<p class="text-sm font-medium text-[#1175BA]">
+						Work In Progress now. Launch is planned for April-May.
+					</p>
+					<p class="max-w-2xl text-base text-slate-600">
+						Speaking practice, pilot courses and education
+						experiments for IT, students and creatives.
+					</p>
+				</div>
+				<div>
+					<a
+						href="#contact"
+						class="inline-flex items-center rounded-full border border-[#1175BA] px-5 py-2 text-sm font-medium text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+					>
+						Contact
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="operations" class="bg-slate-50 py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-4 px-6">
+				<h2 class="text-xl font-semibold text-slate-900">
+					Current state of operations
+				</h2>
+				<p class="max-w-2xl text-base text-slate-600">
+					This project grows slowly, intentionally.
+				</p>
+				<ul class="mt-6 flex flex-col gap-10">
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Pilot classes
+						</span>
+					</li>
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Speaking-practices
+						</span>
+					</li>
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Educational experiments
+						</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="results" class="bg-[#1175BA] py-16">
+			<div class="mx-auto w-full max-w-5xl px-6">
+				<div
+					class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+				>
+					<h2 class="text-xl font-semibold text-white">
+						Beginner level results
+					</h2>
+					<span class="text-7xl font-semibold text-white">30</span>
+				</div>
+				<p class="mt-3 text-base text-white/90">
+					30 people have already passed beginner-level practice
+				</p>
+			</div>
+		</section>
+
+		<section class="bg-slate-50 py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-4 px-6">
+				<h2 class="text-xl font-semibold text-slate-900">
+					How we work
+				</h2>
+				<p class="max-w-2xl text-base text-slate-600">
+					Flowlish is built as an ongoing experiment by people who
+					value depth over speed.
+				</p>
+				<ul class="mt-6 flex flex-col gap-10">
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Small groups
+						</span>
+					</li>
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Experiments
+						</span>
+					</li>
+					<li class="flex items-center gap-6">
+						<span
+							class="inline-flex h-5 w-5 shrink-0 rounded-full bg-[#1175BA]/25"
+						></span>
+						<span
+							class="text-[24px] font-semibold leading-tight text-slate-900"
+						>
+							Fixed deadlines
+						</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="interest-section bg-[#1175BA] py-16">
+			<div class="mx-auto flex w-full max-w-5xl flex-col gap-6 px-6">
+				<h2 class="text-xl font-semibold text-white">
+					Who might be interested
+				</h2>
+				<ul class="grid gap-4 text-base text-white sm:grid-cols-2">
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
+						>
+							<summary
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+							>
+								Beginner teachers and tutors
+							</summary>
+							<p class="px-6 pb-5 text-white/85">
+								If you are starting your teaching practice, this
+								format gives you a safe space to test ideas,
+								receive feedback, and improve communication with
+								real learners.
+							</p>
+						</details>
+					</li>
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
+						>
+							<summary
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+							>
+								Schools
+							</summary>
+							<p class="px-6 pb-5 text-white/85">
+								Schools that want practical speaking-focused
+								activities can use these sessions as an
+								additional layer for student confidence and
+								active participation.
+							</p>
+						</details>
+					</li>
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
+						>
+							<summary
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+							>
+								People valuing the social aspect of education
+							</summary>
+							<p class="px-6 pb-5 text-white/85">
+								Learning here is built around dialogue and group
+								exchange, so people who grow through interaction
+								will find the format motivating and sustainable.
+							</p>
+						</details>
+					</li>
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
+						>
+							<summary
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+							>
+								People tired of "fast results" and "hacks"
+							</summary>
+							<p class="px-6 pb-5 text-white/85">
+								This approach is slower and more intentional. It
+								focuses on long-term fluency habits instead of
+								shortcuts that disappear after a few weeks.
+							</p>
+						</details>
+					</li>
+					<li>
+						<details
+							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
+						>
+							<summary
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+							>
+								Those who value dialogue over lectures
+							</summary>
+							<p class="px-6 pb-5 text-white/85">
+								Every meeting prioritizes conversation and
+								reflection, making it a strong fit for people
+								who learn best through active exchange.
+							</p>
+						</details>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="parents" class="bg-slate-50 py-16">
+			<div class="mx-auto w-full max-w-5xl px-6">
+				<div
+					class="rounded-2xl border border-slate-200 bg-pink-50/20 px-6 py-7"
+				>
+					<h2 class="text-xl font-semibold text-slate-900">
+						For parents
+					</h2>
+					<p class="mt-3 max-w-3xl text-base text-slate-600">
+						If you want to ask about format, schedule, group size,
+						or your child&apos;s starting level, reach out directly
+						and we will help you choose the right path.
+					</p>
+					<div
+						class="mt-5 flex flex-wrap gap-3 text-sm text-slate-700"
+					>
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Telegram for parents</a
+						>
+						<a
+							href="#"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>WhatsApp for parents</a
+						>
+						<a
+							href="mailto:hello@flowlish.com"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Email: hello@flowlish.com</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="bg-pink-50/20 py-16">
+			<div class="mx-auto w-full max-w-5xl px-6">
+				<footer
+					class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 shadow-sm"
+				>
+					<div class="flex items-center gap-3">
+						<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"
+						></span>
+						<h2
+							class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700"
+						>
+							Contact
+						</h2>
+					</div>
+					<p class="max-w-2xl text-base text-slate-600">
+						Contact us if you are curious
+					</p>
+					<div class="flex flex-wrap gap-3 text-sm text-slate-700">
+						<a
+							href="https://t.me/+-IEmSPDodUdiNjAy"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Telegram</a
+						>
+						<a
+							href="https://www.instagram.com/flowlishkz?igsh=d2Q2dWFob2t6ZnR2&utm_source=qr"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Instagram</a
+						>
+						<a
+							href="https://www.threads.com/@flowlishkz?igshid=NTc4MTIwNjQ2YQ=="
+							target="_blank"
+							rel="noopener noreferrer"
+							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
+							>Threads</a
+						>
+					</div>
+				</footer>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.interest-card:hover,
+	.interest-card[open] {
+		border-color: #1175ba;
+	}
+
+	.interest-section .interest-card:hover,
+	.interest-section .interest-card[open] {
+		border-color: rgba(255, 255, 255, 0.75);
+	}
+
+	.interest-summary {
+		position: relative;
+		padding-right: 3rem;
+	}
+
+	.interest-summary::after {
+		content: "+";
+		position: absolute;
+		top: 50%;
+		right: 1.5rem;
+		transform: translateY(-50%);
+		font-size: 1.25rem;
+		line-height: 1;
+		font-weight: 700;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.interest-card[open] .interest-summary::after {
+		content: "−";
+	}
+</style>
+
+<script>
+	const mobileMenuButton = document.getElementById("mobile-menu-button");
+	const mobileMenu = document.getElementById("mobile-menu");
+
+	if (mobileMenuButton && mobileMenu) {
+		mobileMenuButton.addEventListener("click", () => {
+			const isOpen =
+				mobileMenuButton.getAttribute("aria-expanded") === "true";
+			mobileMenuButton.setAttribute(
+				"aria-expanded",
+				isOpen ? "false" : "true",
+			);
+			mobileMenu.classList.toggle("hidden");
+		});
+
+		mobileMenu.querySelectorAll("a").forEach((link) => {
+			link.addEventListener("click", () => {
+				mobileMenuButton.setAttribute("aria-expanded", "false");
+				mobileMenu.classList.add("hidden");
+			});
+		});
+	}
+</script>
