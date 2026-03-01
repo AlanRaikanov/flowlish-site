@@ -10,7 +10,8 @@ import Layout from "../layouts/Layout.astro";
 			>
 				<div class="flex items-center justify-between gap-4">
 					<div class="flex items-center gap-3">
-						<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"></span>
+						<span class="h-2.5 w-2.5 rounded-full bg-[#1175BA]"
+						></span>
 						<span
 							class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700"
 						>
@@ -108,6 +109,9 @@ import Layout from "../layouts/Layout.astro";
 					<p class="text-lg font-medium text-slate-700">
 						Education as a process, not a product.
 					</p>
+					<p class="text-sm font-medium text-[#1175BA]">
+						Work In Progress now. Launch is planned for April-May.
+					</p>
 					<p class="max-w-2xl text-base text-slate-600">
 						Speaking practice, pilot courses and education
 						experiments for IT, students and creatives.
@@ -169,23 +173,15 @@ import Layout from "../layouts/Layout.astro";
 
 		<section id="results" class="bg-[#1175BA] py-16">
 			<div class="mx-auto w-full max-w-5xl px-6">
-				<div
-					class="rounded-3xl border border-white/30 bg-white/10 px-7 py-10 shadow-sm"
-				>
-					<div
-						class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
-					>
-						<h2 class="text-xl font-semibold text-white">
-							Beginner level results
-						</h2>
-						<span class="text-3xl font-semibold text-white"
-							>30</span
-						>
-					</div>
-					<p class="mt-3 text-base text-white/90">
-						30 people have already passed beginner-level practice
-					</p>
+				<div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+					<h2 class="text-xl font-semibold text-white">
+						Beginner level results
+					</h2>
+					<span class="text-3xl font-semibold text-white">30</span>
 				</div>
+				<p class="mt-3 text-base text-white/90">
+					30 people have already passed beginner-level practice
+				</p>
 			</div>
 		</section>
 
@@ -244,7 +240,7 @@ import Layout from "../layouts/Layout.astro";
 							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
 						>
 							<summary
-								class="block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
 							>
 								Beginner teachers and tutors
 							</summary>
@@ -261,7 +257,7 @@ import Layout from "../layouts/Layout.astro";
 							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
 						>
 							<summary
-								class="block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
 							>
 								Schools
 							</summary>
@@ -278,7 +274,7 @@ import Layout from "../layouts/Layout.astro";
 							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
 						>
 							<summary
-								class="block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
 							>
 								People valuing the social aspect of education
 							</summary>
@@ -294,7 +290,7 @@ import Layout from "../layouts/Layout.astro";
 							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
 						>
 							<summary
-								class="block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
 							>
 								People tired of "fast results" and "hacks"
 							</summary>
@@ -310,7 +306,7 @@ import Layout from "../layouts/Layout.astro";
 							class="interest-card rounded-2xl border border-white/35 bg-white/10 transition-colors"
 						>
 							<summary
-								class="block cursor-pointer list-none px-6 py-5 font-semibold text-white"
+								class="interest-summary block cursor-pointer list-none px-6 py-5 font-semibold text-white"
 							>
 								Those who value dialogue over lectures
 							</summary>
@@ -382,16 +378,6 @@ import Layout from "../layouts/Layout.astro";
 						<a
 							href="#"
 							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
-							>Telegram</a
-						>
-						<a
-							href="#"
-							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
-							>WhatsApp</a
-						>
-						<a
-							href="#"
-							class="rounded-full border border-[#1175BA] px-5 py-2.5 text-[#1175BA] transition hover:bg-[#1175BA] hover:text-white"
 							>Instagram</a
 						>
 					</div>
@@ -411,6 +397,27 @@ import Layout from "../layouts/Layout.astro";
 	.interest-section .interest-card[open] {
 		border-color: rgba(255, 255, 255, 0.75);
 	}
+
+	.interest-summary {
+		position: relative;
+		padding-right: 3rem;
+	}
+
+	.interest-summary::after {
+		content: "+";
+		position: absolute;
+		top: 50%;
+		right: 1.5rem;
+		transform: translateY(-50%);
+		font-size: 1.25rem;
+		line-height: 1;
+		font-weight: 700;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.interest-card[open] .interest-summary::after {
+		content: "−";
+	}
 </style>
 
 <script>
@@ -419,8 +426,12 @@ import Layout from "../layouts/Layout.astro";
 
 	if (mobileMenuButton && mobileMenu) {
 		mobileMenuButton.addEventListener("click", () => {
-			const isOpen = mobileMenuButton.getAttribute("aria-expanded") === "true";
-			mobileMenuButton.setAttribute("aria-expanded", isOpen ? "false" : "true");
+			const isOpen =
+				mobileMenuButton.getAttribute("aria-expanded") === "true";
+			mobileMenuButton.setAttribute(
+				"aria-expanded",
+				isOpen ? "false" : "true",
+			);
 			mobileMenu.classList.toggle("hidden");
 		});
 
